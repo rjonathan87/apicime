@@ -13,6 +13,7 @@ namespace apicime.Controllers
     [ApiController]
     public class CodigoPostalController : ControllerBase
     {
+
         private readonly dbexContext _context;
 
         public CodigoPostalController(dbexContext context)
