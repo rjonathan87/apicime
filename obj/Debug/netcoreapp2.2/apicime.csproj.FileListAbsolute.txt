@@ -1,0 +1,14 @@
+/Volumes/Users/Projects/dotnet/apicime/bin/Debug/netcoreapp2.2/apicime.deps.json
+/Volumes/Users/Projects/dotnet/apicime/bin/Debug/netcoreapp2.2/apicime.runtimeconfig.json
+/Volumes/Users/Projects/dotnet/apicime/bin/Debug/netcoreapp2.2/apicime.runtimeconfig.dev.json
+/Volumes/Users/Projects/dotnet/apicime/bin/Debug/netcoreapp2.2/apicime.dll
+/Volumes/Users/Projects/dotnet/apicime/bin/Debug/netcoreapp2.2/apicime.pdb
+/Volumes/Users/Projects/dotnet/apicime/obj/Debug/netcoreapp2.2/apicime.csprojAssemblyReference.cache
+/Volumes/Users/Projects/dotnet/apicime/obj/Debug/netcoreapp2.2/apicime.csproj.CoreCompileInputs.cache
+/Volumes/Users/Projects/dotnet/apicime/obj/Debug/netcoreapp2.2/apicime.RazorAssemblyInfo.cache
+/Volumes/Users/Projects/dotnet/apicime/obj/Debug/netcoreapp2.2/apicime.RazorAssemblyInfo.cs
+/Volumes/Users/Projects/dotnet/apicime/obj/Debug/netcoreapp2.2/apicime.AssemblyInfoInputs.cache
+/Volumes/Users/Projects/dotnet/apicime/obj/Debug/netcoreapp2.2/apicime.AssemblyInfo.cs
+/Volumes/Users/Projects/dotnet/apicime/obj/Debug/netcoreapp2.2/apicime.RazorTargetAssemblyInfo.cache
+/Volumes/Users/Projects/dotnet/apicime/obj/Debug/netcoreapp2.2/apicime.dll
+/Volumes/Users/Projects/dotnet/apicime/obj/Debug/netcoreapp2.2/apicime.pdb
