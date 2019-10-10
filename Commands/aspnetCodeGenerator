@@ -1,0 +1,7 @@
+dotnet aspnet-codegenerator controller -name CodigoPostalController -api -async -nv -m CodigoPostal -dc dbexContext -namespace apicime.Controllers -outDir Controllers
+dotnet aspnet-codegenerator controller -name CatAseguradorasController -api -async -nv -m CatAseguradoras -dc dbexContext -namespace apicime.Controllers -outDir Controllers
+dotnet aspnet-codegenerator controller -name ExpedienteController -api -async -nv -m Expediente -dc dbexContext -namespace apicime.Controllers -outDir Controllers
+dotnet aspnet-codegenerator controller -name GeneroController -api -async -nv -m Genero -dc dbexContext -namespace apicime.Controllers -outDir Controllers
+dotnet aspnet-codegenerator controller -name OrdenesContadoController -api -async -nv -m OrdenesContado -dc dbexContext -namespace apicime.Controllers -outDir Controllers
+dotnet aspnet-codegenerator controller -name OrdenesCreditoController -api -async -nv -m OrdenesCredito -dc dbexContext -namespace apicime.Controllers -outDir Controllers
+dotnet aspnet-codegenerator controller -name SiniestosController -api -async -nv -m Siniestos -dc dbexContext -namespace apicime.Controllers -outDir Controllers

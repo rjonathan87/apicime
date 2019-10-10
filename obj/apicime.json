@@ -5,6 +5,218 @@
     "version": "v1"
   },
   "paths": {
+    "/api/CatAseguradoras": {
+      "get": {
+        "tags": [
+          "CatAseguradoras"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CatAseguradoras"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CatAseguradoras"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CatAseguradoras"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "CatAseguradoras"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CatAseguradoras"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CatAseguradoras"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CatAseguradoras"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CatAseguradoras"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CatAseguradoras"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CatAseguradoras"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CatAseguradoras"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/CatAseguradoras/{id}": {
+      "get": {
+        "tags": [
+          "CatAseguradoras"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CatAseguradoras"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CatAseguradoras"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CatAseguradoras"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "CatAseguradoras"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CatAseguradoras"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CatAseguradoras"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CatAseguradoras"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CatAseguradoras"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "CatAseguradoras"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CatAseguradoras"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CatAseguradoras"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CatAseguradoras"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/CodigoPostal": {
       "get": {
         "tags": [
@@ -217,6 +429,854 @@
         }
       }
     },
+    "/api/Expediente": {
+      "get": {
+        "tags": [
+          "Expediente"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Expediente"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Expediente"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Expediente"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Expediente"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Expediente"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Expediente"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Expediente"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Expediente"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Expediente"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Expediente"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Expediente"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Expediente/{id}": {
+      "get": {
+        "tags": [
+          "Expediente"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Expediente"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Expediente"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Expediente"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Expediente"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Expediente"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Expediente"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Expediente"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Expediente"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Expediente"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Expediente"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Expediente"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Expediente"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Genero": {
+      "get": {
+        "tags": [
+          "Genero"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Genero"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Genero"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Genero"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Genero"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Genero"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Genero"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Genero"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Genero"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Genero"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Genero"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Genero"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Genero/{id}": {
+      "get": {
+        "tags": [
+          "Genero"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Genero"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Genero"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Genero"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Genero"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Genero"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Genero"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Genero"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Genero"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Genero"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Genero"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Genero"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Genero"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/OrdenesContado": {
+      "get": {
+        "tags": [
+          "OrdenesContado"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrdenesContado"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrdenesContado"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrdenesContado"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OrdenesContado"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenesContado"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenesContado"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenesContado"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenesContado"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesContado"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesContado"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesContado"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/OrdenesContado/{id}": {
+      "get": {
+        "tags": [
+          "OrdenesContado"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesContado"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesContado"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesContado"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OrdenesContado"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenesContado"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenesContado"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenesContado"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenesContado"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OrdenesContado"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesContado"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesContado"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesContado"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/OrdenesCredito": {
+      "get": {
+        "tags": [
+          "OrdenesCredito"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrdenesCredito"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrdenesCredito"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrdenesCredito"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OrdenesCredito"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenesCredito"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenesCredito"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenesCredito"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenesCredito"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesCredito"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesCredito"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesCredito"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/OrdenesCredito/{id}": {
+      "get": {
+        "tags": [
+          "OrdenesCredito"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesCredito"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesCredito"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesCredito"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OrdenesCredito"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenesCredito"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenesCredito"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenesCredito"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenesCredito"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OrdenesCredito"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesCredito"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesCredito"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenesCredito"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Values": {
       "get": {
         "tags": [
@@ -398,6 +1458,88 @@
   },
   "components": {
     "schemas": {
+      "CodigoPostal": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dcodigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "dasenta": {
+            "type": "string",
+            "nullable": true
+          },
+          "dtipoAsenta": {
+            "type": "string",
+            "nullable": true
+          },
+          "dmnpio": {
+            "type": "string",
+            "nullable": true
+          },
+          "destado": {
+            "type": "string",
+            "nullable": true
+          },
+          "dciudad": {
+            "type": "string",
+            "nullable": true
+          },
+          "dcp": {
+            "type": "string",
+            "nullable": true
+          },
+          "cestado": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "coficina": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ccp": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ctipoAsenta": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "cmnpio": {
+            "type": "string",
+            "nullable": true
+          },
+          "idAsentaCpcons": {
+            "type": "string",
+            "nullable": true
+          },
+          "dzona": {
+            "type": "string",
+            "nullable": true
+          },
+          "ccveCiudad": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "expediente": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Expediente"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Genero": {
         "type": "object",
         "properties": {
@@ -498,10 +1640,10 @@
         },
         "additionalProperties": false
       },
-      "CatAseguradoras": {
+      "Expediente": {
         "type": "object",
         "properties": {
-          "idAseguradora": {
+          "id": {
             "type": "integer",
             "format": "int32"
           },
@@ -509,50 +1651,74 @@
             "type": "string",
             "nullable": true
           },
-          "razonSocial": {
+          "ap": {
             "type": "string",
             "nullable": true
           },
-          "numero": {
+          "am": {
             "type": "string",
             "nullable": true
           },
-          "direccion": {
+          "fn": {
             "type": "string",
-            "nullable": true
-          },
-          "colonia": {
-            "type": "string",
-            "nullable": true
-          },
-          "delegacion": {
-            "type": "string",
-            "nullable": true
-          },
-          "cp": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "date-time"
           },
           "rfc": {
             "type": "string",
             "nullable": true
           },
-          "mail": {
+          "generoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "calle": {
             "type": "string",
             "nullable": true
           },
-          "login": {
+          "numi": {
             "type": "string",
             "nullable": true
           },
-          "codigo": {
+          "nume": {
             "type": "string",
             "nullable": true
           },
-          "status": {
+          "numc": {
+            "type": "string",
+            "nullable": true
+          },
+          "numm": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaRegistro": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "usuario": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioMod": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "codigoPostalId": {
             "type": "integer",
             "format": "int32",
+            "nullable": true
+          },
+          "codigoPostal": {
+            "$ref": "#/components/schemas/CodigoPostal"
+          },
+          "genero": {
+            "$ref": "#/components/schemas/Genero"
+          },
+          "ordenesContado": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrdenesContado"
+            },
             "nullable": true
           },
           "siniestros": {
@@ -720,10 +1886,10 @@
         },
         "additionalProperties": false
       },
-      "Expediente": {
+      "CatAseguradoras": {
         "type": "object",
         "properties": {
-          "id": {
+          "idAseguradora": {
             "type": "integer",
             "format": "int32"
           },
@@ -731,162 +1897,56 @@
             "type": "string",
             "nullable": true
           },
-          "ap": {
+          "razonSocial": {
             "type": "string",
             "nullable": true
           },
-          "am": {
+          "numero": {
             "type": "string",
             "nullable": true
           },
-          "fn": {
+          "direccion": {
             "type": "string",
-            "format": "date-time"
+            "nullable": true
+          },
+          "colonia": {
+            "type": "string",
+            "nullable": true
+          },
+          "delegacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "cp": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           },
           "rfc": {
             "type": "string",
             "nullable": true
           },
-          "generoId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "calle": {
+          "mail": {
             "type": "string",
             "nullable": true
           },
-          "numi": {
+          "login": {
             "type": "string",
             "nullable": true
           },
-          "nume": {
+          "codigo": {
             "type": "string",
             "nullable": true
           },
-          "numc": {
-            "type": "string",
-            "nullable": true
-          },
-          "numm": {
-            "type": "string",
-            "nullable": true
-          },
-          "fechaRegistro": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "usuario": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "usuarioMod": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "codigoPostalId": {
+          "status": {
             "type": "integer",
             "format": "int32",
-            "nullable": true
-          },
-          "codigoPostal": {
-            "$ref": "#/components/schemas/CodigoPostal"
-          },
-          "genero": {
-            "$ref": "#/components/schemas/Genero"
-          },
-          "ordenesContado": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/OrdenesContado"
-            },
             "nullable": true
           },
           "siniestros": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Siniestros"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "CodigoPostal": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "dcodigo": {
-            "type": "string",
-            "nullable": true
-          },
-          "dasenta": {
-            "type": "string",
-            "nullable": true
-          },
-          "dtipoAsenta": {
-            "type": "string",
-            "nullable": true
-          },
-          "dmnpio": {
-            "type": "string",
-            "nullable": true
-          },
-          "destado": {
-            "type": "string",
-            "nullable": true
-          },
-          "dciudad": {
-            "type": "string",
-            "nullable": true
-          },
-          "dcp": {
-            "type": "string",
-            "nullable": true
-          },
-          "cestado": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "coficina": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "ccp": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "ctipoAsenta": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "cmnpio": {
-            "type": "string",
-            "nullable": true
-          },
-          "idAsentaCpcons": {
-            "type": "string",
-            "nullable": true
-          },
-          "dzona": {
-            "type": "string",
-            "nullable": true
-          },
-          "ccveCiudad": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "expediente": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Expediente"
             },
             "nullable": true
           }
